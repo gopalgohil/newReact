@@ -11,11 +11,11 @@ function Skills() {
         <div className='max-w-6xl w-full grid  grid-cols-1 md:grid-cols-3 gap-8'>
             <div className='md:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-8'>
                 <div className='bg-gray-100 h-24 flex justify-center items-center'>HTML</div>
-                <div className='bg-gray-100 h-24 flex justify-center items-center'>HTML</div>
-                <div className='bg-gray-100 h-24 flex justify-center items-center'>HTML</div>
-                <div className='bg-gray-100 h-24 flex justify-center items-center'>HTML</div>
-                <div className='bg-gray-100 h-24 flex justify-center items-center'>HTML</div>
-                <div className='bg-gray-100 h-24 flex justify-center items-center'>HTML</div>
+                <div className='bg-gray-100 h-24 flex justify-center items-center'>CSS</div>
+                <div className='bg-gray-100 h-24 flex justify-center items-center'>JavaScript</div>
+                <div className='bg-gray-100 h-24 flex justify-center items-center'>React Js</div>
+                <div className='bg-gray-100 h-24 flex justify-center items-center'>Express JS</div>
+                <div className='bg-gray-100 h-24 flex justify-center items-center'>Node js</div>
             </div>
             <div className='relative bg-white p-8 rounded-lg shadow-md'>
                 <div className='flex items-center space-x-4 flex-col md:item-start space-y-4'>

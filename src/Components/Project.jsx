@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 function Project() {
   const imagesData = [
     { id: 1, category: 'All', title: 'All Designs', img: 'home.png' },
@@ -16,7 +17,7 @@ function Project() {
 
   return (
     <div>
-      <div className='container mx-auto p-5 '>
+      <div className='container mx-auto p-5 ' >
         <div className='flex  justify-center space-x-4 mb-6 '>
 
         {categories.map((category) => (

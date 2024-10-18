@@ -11,6 +11,7 @@ function Contact() {
         </div>
         <div className='flex justify-center items-center space-x-2'>
             <input type="email" placeholder="Enter your email address" className='w-1/2 p-4 rounded-lg border border-gray-300 focus:outline-none focus:border-purple-500' />
+            <input type="message " placeholder='Enter your message' className='w-1/2 p-4 rounded-lg border border-gray-300 focus:outline-none focus:border-purple-500' />
             <button className='bg-white text-indigo-700 font-semibold px-6 py-3 rounded-md'>SUBSCRIBE </button>
         </div>
        
