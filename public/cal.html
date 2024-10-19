@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: gainsboro;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    border: solid 3px orange;
+    width: 330px;
+    height: 450px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    column-gap: 8px;
+    margin: 90px 20px;
+}
+
+#clear {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 40px;
+    font-size: 20px;
+    padding: 5px;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+#ans {
+    margin: 10px 20px;
+    width: 275px;
+    position: absolute;
+    font-size: 30px;
+    background-color: white;
+    color: orange;
+    border-radius: 10px;
+    border: solid 1px orange;
+    padding: 10px;
+}
+
+/* Updated button styles */
+input[type="button"] {
+    width: 50px;
+    padding: 15px;
+    background-color: teal;  /* Changed background color */
+    color: white;  /* Changed text color for contrast */
+    border: solid 1px darkslategray;  /* Changed border color */
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+input[type="button"]:hover {
+    background-color: darkslategray;  /* Darker shade for hover effect */
+    color: white;
+}
+
+#sub {
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        height: 450px;
+    }
+
+    input[type="button"] {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #clear {
+        width: 150px;
+        margin-left: 50px;
+    }
+
+    #ans {
+        width: 90%;
+    }
+}
+
+</style>
+<body>
+    <form name="form1">
+        <input type="text" name="ans" id="ans">
+        <div class="box">
+            <input type="button" value="1" onclick="form1.ans.value +='1'">
+            <input type="button" value="2" onclick="form1.ans.value +='2'">
+            <input type="button" value="3" onclick="form1.ans.value +='3'">
+            <input type="button" value="/" onclick="form1.ans.value +='/'">
+            <input type="button" value="4" onclick="form1.ans.value +='4'">
+            <input type="button" value="5" onclick="form1.ans.value +='5'">
+            <input type="button" value="6" onclick="form1.ans.value +='6'">
+            <input type="button" value="X" onclick="form1.ans.value +='*'">
+            <input type="button" value="7" onclick="form1.ans.value +='7'">
+            <input type="button" value="8" onclick="form1.ans.value +='8'"> 
+            <input type="button" value="9" onclick="form1.ans.value +='9'">
+            <input type="button" value="-" onclick="form1.ans.value +='-'" id="sub">
+            <input type="button" value="0" onclick="form1.ans.value +='0'" id="zero">
+            <input type="button" value="." onclick="form1.ans.value +='.'" id="dot">
+            <input type="button" value="+" onclick="form1.ans.value +='+'">
+            <input type="button" value="=" onclick="form1.ans.value =eval(form1.ans.value)">
+            <input type="button" id="clear" value="Clear ALL" onclick="form1.ans.value =''">
+        </div>
+    </form>
+</body>
+</html>

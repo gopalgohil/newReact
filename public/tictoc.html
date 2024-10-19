@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: cadetblue;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 2rem;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-box { 
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            gap: 10px;
+            margin: 40px 0;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            border: none;
+            background-color: yellow;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .res {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .reset {
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .reset:hover {
+            background-color: #ff4500;
+        }
+
+        .reset:active {
+            background-color: #e63946;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .msg-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .msg-container.hide {
+            display: none;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 600px) {
+            .main-box {
+                grid-template-columns: repeat(3, 60px);
+                gap: 8px;
+            }
+
+            .box {
+                width: 60px;
+                height: 60px;
+                font-size: 30px;
+            }
+
+            .reset {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+    <div class="msg-container hide">
+        <div id="msg">Winners</div>
+    </div>
+
+    <div class="container">
+        <h1>Tick Tock</h1>
+        <div class="main-box">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+    </div>
+
+    <div class="res">
+        <button class="reset">Reset Game</button>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
